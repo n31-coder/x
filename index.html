@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+    
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Lobster&family=Strait&display=swap" rel="stylesheet">
+<head>
+    <style>
+                                       @media handheld and (max-width: 480px),
+                                            screen and (max-device-width: 480px),
+                                              screen and (max-width: 480px) 
+                                                 {
+
+                                   #maincontent { font-size: 14px; line-height: normal; }
+
+
+                                                     }
+  .slider {
+  width: 600px;
+  height: 800px;
+  display: flex;
+  overflow-x: auto;
+  align-content: center;
+  margin-left: 180px;            
+}
+        
+        
+                                              
+        
+                                             @media (max-width: 450px) {
+                                                .slider {
+                                                    width: 280px;
+                                                    height: 350px;
+                                                    align-content: center;
+                                                    margin-left: 10px;
+                                                }
+                                                      }
+        
+        .slide{
+  width: 500px;
+  flex-shrink: 0;
+  height: 700px;
+  align-content: center;
+  padding:20px 50px 20px 50px;
+}
+                       
+                                          
+                                             @media (max-width: 450px) {
+                                                      .slide{
+                                                     width: 270px;
+                                                       flex-shrink: 0;
+                                                      height: 350px;
+                                                     align-content: center;
+                                                    padding:1px 3px 1px 3px;
+                                                        }  }
+                                                      
+                                                
+        
+                                             
+        
+                         
+        .slides > div:target {
+  transform: scale(0.8);
+}
+        
+        
+        
+      .container {
+  position: relative;
+  text-align: center;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-size: 50px;
+    color:#447f81
+
+                 
+        }
+        
+       
+                                            @media (max-width: 450px) { 
+                                                p {
+                                                       font-size: 25px;
+                                                   
+                                                    left: 54%;
+                                                    top: 60%;
+                                                }
+                                             }
+          
+        .centrelow {
+            position:absolute;
+            left:40%;
+            top: 60%;
+            font-size: 30px;
+            font-family: chaucer;
+            color:rgb(255, 130, 120);
+        }
+        
+        
+                                        
+        
+        .imagedemo {
+           filter: opacity(40%) brightness(80%);
+        }
+                                            @media (max-width: 450px) {
+                                                .imagedemo {
+                                                    filter: opacity(40%) brightness(80%);
+                                                    width: 300px;
+                                                    height: 350px;
+                                                }
+        }
+        .bookimg {
+            height:250px;
+            width:250px;
+            object-fit: scale-down;
+        }
+        .bookname {
+            font-family: sans-serif; 
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        
+        }
+        .category {
+            font-family: serif;
+            font-size: 15px;
+            color: black;
+        }
+        
+   
+        .flex-container {
+  display:inline-flex;
+  flex-flow: row wrap;
+}
+        
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+        .box {
+            background-color:#fff9fa;
+            margin: 10px 20px 10px 20px;
+            text-align: center;
+            border-radius: 10%; 
+        }
+        
+        .cat {
+           margin:25px 80px 25px 80px ;
+            padding:10px 0px 15px 0px ;
+            text-align: center;
+            font-size: 20px;
+            font-family:inherit;
+            width: 800px;
+            height: 50px;
+            
+             }
+                                                 
+                                            @media (max-width: 450px) { 
+                                                .cat {
+                                                       font-size: 15px;
+                                                   padding-top: 0px;
+                                                    width: 170px;
+                                                    height: 20px;
+                                                    text-align: center;
+                                                    margin-left: 60px;
+                                                }
+                                             }
+        
+ 
+        .header {
+  background-color:#fff9fa;
+  padding: 20px;
+  text-align:left;
+  color:#d85e5e;
+}
+      
+
+        .navbar {
+            height: 59px;
+           
+        }
+        
+                                               @media (max-width: 450px) {
+                                                  .navbar {
+                                                      margin-top: 5px;
+                                                      margin-bottom: 65px;
+                                                            }
+                                                                }                                    
+        
+        
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#ffced6;
+  top: 0;
+}
+        
+                                              @media (max-width: 450px) {
+                                                        ul {
+                                                          height: 100px;
+                                                          width: 300px;        
+                                                  }
+                                              } 
+                                                            
+                                                            
+                                                        
+                
+            
+    
+        
+        
+        
+        li {
+  float: left;
+}
+
+    
+        
+li a {
+    
+  display: block;
+  color:black;
+  font-family:sans-serif;
+  font-size: 26px;
+  text-align: center;
+  padding: 14px 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+        
+li a:hover {
+  background-color:#ffe3e8 ;
+  
+}
+
+                                              @media (max-width: 450px) {
+                                                  li a {
+                                                      font-size: 20px;
+                                                      padding: 7px 7px;
+                                                  }
+                           
+                                                        }
+        
+        
+        
+        .active {
+  background-color: 
+      floralwhite;
+}
+       
+    .searchbar[type=text] {
+ 
+  display:inline-flex;
+  flex-flow: row wrap; 
+  border:none;
+  margin-top: 12px;
+  margin-bottom:12px;
+  padding: 5px 5px ;
+  font-size: 20px;
+          float: right;
+
+} 
+        
+                                            @media (max-width: 450px) {
+                                                .searchbar [type=text] {
+                                                  display: none;
+                                                    
+                                                }    
+                                                  }
+        
+           
+        .h1 {
+            text-align: center;
+        }
+        
+        
+        .h2 {
+            margin-left: 350px; 
+               font-size: 30px; 
+               color: #ff7b8f;
+               padding-top: 25px;
+               padding-bottom: 5px;
+               font-family: 'Lobster', cursive;
+        }
+        
+        
+                                           @media (max-width: 450px) {
+                                               .h2 {
+                                                  margin-left: 50px; 
+                                                  font-size: 25px; 
+                                                  padding-top: 20px;
+                                                  padding-bottom: 5px;
+                                                      }  
+                                                   }
+                                          
+        
+        .icon {
+            display: block;
+            padding:14px 16px;
+            display:inline-flex;
+            flex-flow: row wrap; 
+            transition-duration: 0.4s;
+            
+        }
+         
+           
+        
+                                               @media (max-width: 450px) {
+                                                  .icon {
+                                                     width: 25px;
+                                                     height: 25px;
+                                                     padding-left: 34px;
+                                                       }
+                                                          }
+        
+        
+        
+        
+        
+        
+        .icon:hover {
+             background-color:#ffe3e8 ;
+        }
+        
+        .btn {
+          border:none ;
+          color: #d85e5e; 
+          background-color:#fff9fa;
+          padding: 13px 26px; 
+          cursor: pointer; 
+          display:inline-flex;
+          flex-flow: row wrap; 
+            float: right;
+                  }
+           
+        
+                                             @media (max-width: 450px) {
+                                                  .btn {
+                                                      font-size: 25px
+                                                        height: 35px;
+                                                      width: 60px;
+                                                     display: block;
+                                                      align-self: center;
+                                                      text-align: center;
+                                                      padding: 5px 5px;
+                                                      margin-bottom: 5px;
+                                                      margin-top: 5px;
+                                                      
+                                                 }
+                                              }
+                
+        .login {
+            background-color:#fff9fa;
+        } 
+        
+        
+                                               @media (max-width: 450px) {
+                                             .login {
+                                                 margin-left: 0px;
+                                                   }
+                                                     }
+        
+        
+        .email[type=text] {
+            width: 500px;
+            height: 40px;
+            border-color: black;
+            border-width: thin;
+            margin: 40px 10px 20px 50px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 8px;
+            font-size: 20px;
+            
+        }
+        
+        
+                                                 @media (max-width: 450px) { 
+                                                     .email[type=text] {
+                                                       font-size: 15px;
+                                                       width: 250px;
+                                                       height: 20px;
+                                                       margin-left: 9px;
+                                                }
+                                             }
+        
+        .subscribe {
+            width: 150px;
+            height: 60px;
+            border-width: thin;
+            border-color: white;
+            background-color: black;
+            color: white;
+            margin: 40px 50px 20px 10px;
+            padding: 10px 10px 10px 10px;
+            font-size: 20px;
+            align-content: center;
+        }
+           
+        
+                                               @media (max-width: 450px) {
+                                                   .subscribe {
+                                                width: 130px;
+                                                height: 35px;
+                                                margin: 10px 0px 20px 2px;
+                                                padding: 4px 10px 4px 10px;
+                                                font-size: 15px;        
+                                                  }
+                                                }
+                                                      
+        
+ 
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color:#ffe3e8;
+  
+}
+        
+    
+        
+        .contact {
+            display:inline-flex;
+            flex-flow: row wrap; 
+            margin-left: 50px;
+            margin-right: 10px;
+        }    
+        
+        
+                                               @media (max-width: 450px) {
+                                                       .contact {
+                                                     margin-left: 25px;
+                                                     
+                                                      } 
+                                                          }
+        
+        .ficon {
+        width: 50px;
+        height: 50px;
+       
+        }
+          
+                                                @media (max-width: 450px) { 
+                                                       .ficon {
+                                                           width: 35px;
+                                                           height: 35px;
+                                                    
+                                                    
+                                                    }
+                                                         }
+        
+        
+        .fdiv {
+          padding-left: 340px;  
+        }
+        
+                                                @media (max-width: 450px) {
+                                                    .fdiv {
+                                                        padding-left: 1px;
+                                                    }
+                                                              
+                                                               }
+        
+    </style>
+
+   
+    
+    <header class="header" style="font-size:30px;">
+        
+            <b style=" font-family: 'Lemonada', cursive;;">
+            Bookutopia</b>
+        -
+        <b style="font-family: 'Strait', sans-serif;">
+           World's Largest Online Bookstore
+        </b>
+      
+        <button class="btn login button">Sign Up</button>
+        <button class="btn signup button">Login</button>
+    </header>
+  
+    <nav class="navbar">
+    <ul>
+        <b>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+          
+            
+            
+          
+          
+              <img style="float:right" class="icon li" src="https://img.icons8.com/material-two-tone/24/000000/menu.png">
+              <img style="float:right" class="icon li" src="https://img.icons8.com/material-rounded/24/000000/guest-male.png"/>
+              <img style="float:right" class="icon li" src="https://img.icons8.com/material-sharp/24/000000/like.png"/>
+              <img style="float:right" class="icon li" src="https://img.icons8.com/material-sharp/24/000000/home.png"/>
+             <input type="text" class="searchbar " placeholder="Search...">
+        
+        </b>
+</ul>
+    </nav>
+    </head>
+    
+    <body style="background-color:#fff9fa;">
+       
+        <div class="container">
+   <img class="imagedemo"alt="Books"  style="width:100%;" src=" https://www.canva.com/learn/wp-content/uploads/2015/03/50-life-changing-motivational-quotes-for-entrepreneurs-–-as-awesome-posters.jpg" >
+            <div class="centered"><p><i>"The world belongs to those who read"</i></p> </div>
+            <div class="centrelow"><p><i>Get Started Now</i></p></div>
+          
+</div>
+
+     <div>
+         <h1 class="h1">Featured Bestsellers</h1>
+        </div>
+        
+            <div class=" box flex-container">
+           <p class="bookname ">  <img class="column bookimg" src="https://images-na.ssl-images-amazon.com/images/I/81guS1mHhJL.jpg">
+            <br>
+               <strong>Where The Crawdads Sing</strong><br><i>By Delia Owens</i></p>
+            
+        </div>
+        
+        <div class=" box flex-container">
+            <p class="bookname"> <img class="column bookimg " src="https://images-na.ssl-images-amazon.com/images/I/61AyfAM-uwL.jpg">
+                <br>
+                <strong>The Midnight Sun</strong><br><i>By Stephenie Meyer</i></p>
+        </div>
+        
+        <div class=" box flex-container">
+          <p class="bookname "><img class="column bookimg " src="https://images-na.ssl-images-amazon.com/images/I/91twTG-CQ8L.jpg">
+              <br>
+              <strong>Little Fires Everywhere</strong><br><i>By Celeste Ng</i></p>
+        </div>
+      
+        <div class=" box flex-container">
+          <p class="bookname "><img class="column bookimg " src="https://images-na.ssl-images-amazon.com/images/I/81dDwAzxtrL.jpg">
+              <br>
+              <strong>Becoming</strong><br><i>By Michelle Obama</i></p>
+        </div>
+        
+          <div class=" box flex-container">
+          <p class="bookname "><img class="column bookimg " src="https://images-na.ssl-images-amazon.com/images/I/8116vy-AXCL.jpg">
+              <br>
+              <strong>Too much and Never Enough</strong><br><i>By Mary L. Trump</i></p>
+        </div>
+        
+         <div class=" box flex-container">
+          <p class="bookname "><img class="column bookimg " src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571245111l/52676534._SX318_SY475_.jpg">
+              <br>
+              <strong>Untamed</strong><br><i>By Glennon Doyle</i></p>
+        </div>
+        
+         <div>
+           <h1 class="h1"> Antiracist Reads</h1>
+        </div>
+          <div class=" box flex-container">
+          <p class="bookname "><img class="column bookimg " src="https://m.media-amazon.com/images/I/51hbKTKap9L.jpg">
+              <br>
+              <strong>Make Change</strong><br><i>By Shaun King</i></p>
+        </div>
+        
+         <div class=" box flex-container">
+          <p class="bookname "><img class="column bookimg " src="https://images-na.ssl-images-amazon.com/images/I/51d2yZMynML._SY445_QL70_ML2_.jpg">
+              <br>
+              <strong>Caste</strong><br><i>By Isabel Wilkerson</i></p>
+        </div>
+        
+         <div class=" box flex-container">
+          <p class="bookname "><img class="column bookimg " src="https://images-na.ssl-images-amazon.com/images/I/918r-7lTp2L.jpg">
+              <br>
+              <strong>How to be an Antiracist</strong><br><i>Ibram X. Kendi</i></p>
+        </div>
+        
+        <div class=" box flex-container">
+          <p class="bookname "><img class="column bookimg " src="https://m.media-amazon.com/images/I/61DT2-lJ7LL.jpg">
+              <br>
+              <strong>March:Book one</strong><br><i>By John Lewis</i></p>
+        </div>
+        
+         <div class=" box flex-container">
+          <p class="bookname "><img class="column bookimg " src="https://images-na.ssl-images-amazon.com/images/I/41kCcJh70DL._SX353_BO1,204,203,200_.jpg">
+              <br>
+              <strong>On Tyranny</strong><br><i>By Timothy Snyder</i></p>
+        </div>
+        
+         <div class=" box flex-container">
+          <p class="bookname "><img class="column bookimg " src="https://images-na.ssl-images-amazon.com/images/I/51t4xnKsyBL._SX329_BO1,204,203,200_.jpg">
+              <br>
+              <strong>Circe</strong><br><i>By Madeline Miller</i></p>
+        </div>
+        
+        <h1 class="h1"><b>Browse by Genre</b></h1>
+        
+        
+        <div style="background-color: antiquewhite;" class="cat container">
+                <p><strong><i>Fantasy</i></strong></p>
+        </div>
+        
+         <div style="background-color: floralwhite;" class="cat container" >
+                <p><strong><i>Adventure</i></strong></p>
+        </div>
+        
+        <div style="background-color: honeydew;" class="cat container">
+                <p><strong><i>Romance</i></strong></p>
+        </div>
+        
+        <div style="background-color: ghostwhite;" class="cat container">
+                <p><strong><i>Classics</i></strong></p>
+        </div>
+        
+        <div style="background-color:whitesmoke;" class="cat container">
+                <p><strong><i>Mystery</i></strong></p>
+        </div>
+        
+       <div style="background-color: azure;" class="cat container">
+                <p><strong><i>Horror</i></strong></p>
+        </div>
+        
+        <div style="background-color:cornsilk;" class="cat container">
+                <p><strong><i>Thriller</i></strong></p>
+        </div>
+        
+        <div style="background-color:aliceblue;" class="cat container">
+                <p><strong><i>Science</i></strong></p>
+        </div>
+        
+        
+            <div  style="text-align: center; font-size: 28px; font-family: serif; padding-top: 20px; padding-bottom: 10px;" >
+                      <strong>New Releases</strong></div>
+    
+        
+        
+       <h5 style= "font-family: sans-serif; 
+            font-size: 15px;
+            color: black;
+            text-align: center;">(Swipe for more)</h5>
+  
+      
+        
+        <div style="background-color: lightcyan; margin-top: 20px;" class=" slider container">
+            
+                
+           
+            
+            <img class="slide" src="https://images-na.ssl-images-amazon.com/images/I/81tWhFdQroL.jpg">
+            
+            <img class="slide" src="https://prodimage.images-bn.com/pimages/9780061726835_p0_v4_s1200x630.jpg">
+            
+            <img class="slide" src="https://lithub.com/wp-content/uploads/2019/01/9781616208882.jpg">
+            
+            <img class="slide" src="https://images-na.ssl-images-amazon.com/images/I/91WOBXuHhsL.jpg">
+            
+        
+        </div>
+        
+     
+    
+         <div style="background-color: lavender; margin-top: 20px;" class="container">
+            
+                  <div class="container" style="text-align: center; font-size: 28px; font-family:serif; padding-top: 40px; padding-bottom: 10px;">
+                       <i><strong>-Join Our Newsletter-</strong></i>
+                             <br>
+                  <h7 style="text-align:center; font-size: 18px; font-family: sans-serif; padding-bottom: 10px; padding-top: 25px; color: #606060">Signup to be the first to hear about exclusive deals, special offers and upcoming collections.</h7>
+                      
+                      
+                            </div>
+            
+               <input type="text" class="email" placeholder="Enter email for weekly newsletter."><button class="subscribe">Subscribe</button>
+        
+        
+                       </div>
+    </body>
+    
+<footer>
+    <h2 class="h2">www.bukotopia.com</h2>
+    
+    <hr>
+    
+    
+    <div class="contact" >
+    <p>
+    <b style="font-size: 30px;">Contact Us</b>
+    <br>
+    <br>    
+    +1800-444-900
+    <br>
+    bookutopia@gmail.com
+    <br>
+    support@bookutopia.com
+    </p>
+        
+    </div>
+    
+    
+    
+        <div style="display:inline-flex; flex-flow: row wrap; margin-left: 60px; font-size: 22px; ">
+    <p>
+    <b>Shop</b>
+    <br>
+    <br>
+    Offers
+    <br>
+    <br>
+    Sales
+    <br>
+    <br>
+    Coupons
+    <br>
+    <br>
+    Gift Cards
+    </p>
+    </div>
+    
+    
+    <div style="display:inline-flex; flex-flow: row wrap; margin-left: 60px; font-size: 22px;">
+    <p>
+    <b>Explore</b>
+    <br>
+    <br>
+    About Us
+    <br>
+    <br>
+    Site Map
+    <br>
+    <br>
+    Bookmarks
+    <br>
+    <br>
+    Newsletter
+    <br>
+    <br>
+    Login|Sign Up
+    </p>
+    </div>
+    
+    
+       <div style="display:inline-flex; flex-flow: row wrap; margin-left: 60px; font-size: 22px;">
+    <p>
+    <b>Account</b>
+    <br>
+    <br>
+    My Account
+    <br>
+    <br>
+    Orders
+    <br>
+    <br>
+    Wish List
+    <br>
+    <br>
+    Partners
+    <br>
+    <br>
+    Security
+    </p>
+    </div>
+    
+    
+       <div style="display:inline-flex; flex-flow: row wrap; margin-left: 60px; font-size: 22px;">
+    <p>
+    <b>Policy</b>
+    <br>
+    <br>
+    Return Policy
+    <br>
+    <br>
+    Terms of use
+    <br>
+    <br>
+    Privacy Policy
+    <br>
+    <br>
+    Report
+    </p>
+    </div>
+    
+    
+    
+    
+<div class="fdiv">
+    <img class=" ficon icon li" src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png">
+    <img class=" ficon icon li" src="https://img.icons8.com/ios-filled/50/000000/facebook.png">
+    <img class=" ficon icon li" src="https://img.icons8.com/android/50/000000/twitter.png">
+    <img class=" ficon icon li" src="https://img.icons8.com/metro/50/000000/pinterest.png">
+    </div>
+    <hr>
+    </footer>
+    </html>
